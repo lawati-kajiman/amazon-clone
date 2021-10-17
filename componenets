@@ -1,0 +1,45 @@
+import React from 'react';
+import "./Header.css";
+import SearchIcon from '@mui/icons-material/Search';
+import { dividerClasses } from '@mui/material';
+import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
+class Header extends React.Component {
+    render() { 
+        return (
+        <div className='Header'>
+            <img className='header_logo'src="https://download.logo.wine/logo/Amazon_(company)/Amazon_(company)-Logo.wine.png" alt="Download Amazon Logo in SVG Vector or PNG File Format - Logo.wine" />
+            
+            <div className='search_head'> 
+                <input className='search_bar' type="text"/>
+                <SearchIcon className='search_icon'/>
+
+            </div>
+            <div className='header_nav'>
+                <div className='option'>
+                    <span className='text1'>hello</span>
+                    <span className='text2'>sign in</span>
+
+                </div>
+                <div className='option'>
+                    <span className='text1'>return</span>
+                    <span className='text2'>& order</span>
+
+                </div>
+                <div className='option'>
+                    <span className='text1'>your</span>
+                    <span className='text2'>prime</span>
+
+                </div>
+                <div className='basket'>
+                <ShoppingBasketIcon />
+                <span className='count'>0</span>
+                </div>
+
+            </div>
+
+        </div>
+        )
+    }
+}
+ 
+export default Header;
